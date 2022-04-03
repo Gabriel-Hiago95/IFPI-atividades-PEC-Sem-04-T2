@@ -1,0 +1,11 @@
+def main():
+    def dimensoes_quadrado(l):
+        area = l ** 2
+        perimetro = l + l + l + l
+        return area, perimetro
+    lado = float(input('Informe o valor do lado do quadrado: ').strip())
+    a_quadrado, p_quadrado = dimensoes_quadrado(lado)
+    print(f'A área do quadrado vale: {a_quadrado:.4f}')
+    print(f'O perímetro do quadrado vale: {p_quadrado:.4f}')
+if __name__ == '__main__':
+    main()
