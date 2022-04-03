@@ -1,0 +1,10 @@
+def main():
+    def calcular(a, b, c):
+        return (2 * a) + (5 * b) - c
+    num1 = int(input('Digite o primeiro valor inteiro: ').strip())
+    num2 = int(input('Digite o segundo valor inteiro: ').strip())
+    num3 = int(input('Digite o terceiro valor inteiro: ').strip())
+    resultado = calcular(num1, num2, num3)
+    print('O resultado da função com os valores {}, {} e {} é igual a {}'.format(num1, num2, num3, resultado))
+if __name__ == '__main__':
+    main()
