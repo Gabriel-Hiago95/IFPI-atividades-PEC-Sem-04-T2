@@ -1,0 +1,12 @@
+def main():
+    def porcentagem(preco, percentual):
+        aumento = preco + (preco * (percentual / 100))
+        desconto = preco - (preco * (percentual / 100))
+        return aumento, desconto
+    prec = float(input('Informe o preço do item em R$: ').strip())
+    percent = float(input('Informe o valor da porcentagem: ').strip())
+    aum, desc = porcentagem(prec, percent)
+    print(f'O Preço com aumento é de R$ {aum:.2f}')
+    print(f'O preço com desconto é de R$ {desc:.2f}')
+if __name__ == '__main__':
+    main()
